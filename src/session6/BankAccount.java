@@ -8,7 +8,17 @@ public class BankAccount {
     private String phoneNumber;
 
     public BankAccount() {
-        System.out.println("Empty constructor called");
+        this("1111111111", 2.50, "Default Name", "Default Email", "Default Number");
+        System.out.println("Constructor with no parameters called");
+    }
+
+    public BankAccount(String accountNumber, double balance, String customerName, String email, String phoneNumber) {
+        System.out.println("Constructor with parameters called");
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
     }
 
     public void depositAmount(double balance) {
