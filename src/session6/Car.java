@@ -28,7 +28,11 @@ public class Car {
     }
 
     public void setModel(String model) {
-        this.model = model;
+        if (model.toLowerCase().equals("carrera") || model.toLowerCase().equals("911")) {
+            this.model = model;
+        } else {
+            this.model = "Unknown";
+        }
     }
 
     public String getEngine() {
