@@ -14,5 +14,12 @@ public class Main {
         dog.run();
         System.out.println("\n/********************/\n");
 
+        Fish fish = new Fish("apollo", 10, 2, 2, 2, 1);
+
+        fish.swim(2);
+        System.out.println("\n/********************/\n");
+        fish.rest();
+        System.out.println("\n/********************/\n");
+
     }
 }

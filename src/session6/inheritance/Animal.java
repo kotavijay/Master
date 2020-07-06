@@ -1,11 +1,14 @@
 package session6.inheritance;
 
 public class Animal {
-    private final String name;
-    private final int brain;
-    private final int body;
-    private final int size;
-    private final int weight;
+    private String name;
+    private int brain;
+    private int body;
+    private int size;
+    private int weight;
+
+    public Animal() {
+    }
 
     public Animal(String name, int brain, int body, int size, int weight) {
         this.name = name;

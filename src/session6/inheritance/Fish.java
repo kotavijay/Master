@@ -2,9 +2,12 @@ package session6.inheritance;
 
 public class Fish extends Animal {
 
-    private final int gills;
-    private final int eyes;
-    private final int fins;
+    private int gills;
+    private int eyes;
+    private int fins;
+
+    public Fish() {
+    }
 
     public Fish(String name, int size, int weight, int gills, int eyes, int fins) {
         super(name, 1, 1, size, weight);
