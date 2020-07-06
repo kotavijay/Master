@@ -50,6 +50,10 @@ public class Dog extends Animal {
         super.move(speed);
     }
 
+    public void sleep() {
+        System.out.println("Dog.sleep() called");
+    }
+
     public int getEyes() {
         return eyes;
     }
