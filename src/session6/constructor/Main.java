@@ -1,4 +1,4 @@
-package session6;
+package session6.constructor;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Main {
 
         vijay.withdrawal(40000D);
 
-        System.out.println("/*************************/");
+        System.out.println("\n/*************************/\n");
 
         BankAccount ajay = new BankAccount("2222222222", 20_324, "Ajay", "jamjyouthiajay@gmail.com", "+91 9999999999");
 
@@ -39,6 +39,16 @@ public class Main {
         ajay.depositAmount(876D);
 
         ajay.withdrawal(47_987);
+
+        System.out.println("\n/*************************/\n");
+
+//        Assignment
+//        VipCustomer vipCustomer = new VipCustomer();
+//        VipCustomer vipCustomer = new VipCustomer("vijay", 200D);
+        VipCustomer vipCustomer = new VipCustomer("vijay", 300D, "vijay.kota5@outlook.com");
+        System.out.println("name: " + vipCustomer.getName());
+        System.out.println("credit limit: " + vipCustomer.getCreditLimit());
+        System.out.println("email: " + vipCustomer.getEmailAddress());
 
     }
 }

@@ -1,4 +1,4 @@
-package session6;
+package session6.constructor;
 
 public class BankAccount {
     private String accountNumber;
