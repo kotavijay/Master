@@ -9,14 +9,21 @@ public class Main {
         porsche.setEngine("V8");
         porsche.setWheels(4);
 
+        System.out.println("\n/********************/\n");
+
         System.out.println(porsche.getModel());
+
+        System.out.println("\n/********************/\n");
 
 //        Assignment
         BankAccount vijay = new BankAccount();
 
+        System.out.println("\n/********************/\n");
+
         System.out.println(vijay.getBalance());
         System.out.println(vijay.getAccountNumber());
 
+        System.out.println("\n/********************/\n");
 
         vijay.setAccountNumber("111111114351");
         vijay.setBalance(10_000D);
@@ -30,7 +37,7 @@ public class Main {
 
         vijay.withdrawal(40000D);
 
-        System.out.println("\n/*************************/\n");
+        System.out.println("\n/********************/\n");
 
         BankAccount ajay = new BankAccount("2222222222", 20_324, "Ajay", "jamjyouthiajay@gmail.com", "+91 9999999999");
 
@@ -40,7 +47,7 @@ public class Main {
 
         ajay.withdrawal(47_987);
 
-        System.out.println("\n/*************************/\n");
+        System.out.println("\n/********************/\n");
 
 //        Assignment
 //        VipCustomer vipCustomer = new VipCustomer();
