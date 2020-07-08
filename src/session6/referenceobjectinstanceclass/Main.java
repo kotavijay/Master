@@ -11,8 +11,8 @@ public class Main {
 
         System.out.println("\n/********************/\n");
 
-        System.out.println(blue.getColor());
-        System.out.println(yellow.getColor());
+        System.out.println("blue.getColor(): " + blue.getColor());
+        System.out.println("yellow.getColor(): " + yellow.getColor());
 
 //        Changing value of yellow will change the value of blue as yellow is referring to blue variable
 //        Their physical value will be same
@@ -20,8 +20,9 @@ public class Main {
 
         System.out.println("\n/********************/\n");
 
-        System.out.println(blue.getColor());
-        System.out.println(yellow.getColor());
+        System.out.println("yellow.setColor(\"yellow\")");
+        System.out.println("blue.getColor(): " + blue.getColor());
+        System.out.println("yellow.getColor(): " + yellow.getColor());
 
 
 //        Creating instance of House
@@ -30,10 +31,13 @@ public class Main {
 //        Passing reference of green variable to red variable
         House red = green;
 
+//        Assigning old value of green to yellow variable
+        yellow = green;
+
         System.out.println("\n/********************/\n");
 
-        System.out.println(green.getColor());
-        System.out.println(red.getColor());
+        System.out.println("green.getColor(): " + green.getColor());
+        System.out.println("red.getColor(): " + red.getColor());
 
 //        Changing value of red will change the value of green as red is referring to green variable
 //        Their physical value will be same
@@ -43,11 +47,12 @@ public class Main {
 //        Changing the reference will change the value of the its own object/instance and doesnt effect other instances/objects
         System.out.println("\n/********************/\n");
 
-        System.out.println(blue.getColor());
-        System.out.println(yellow.getColor());
+        System.out.println("red.setColor(\"red\")");
+        System.out.println("blue.getColor(): " + blue.getColor());
+        System.out.println("yellow.getColor(): " + yellow.getColor());
         System.out.println();
-        System.out.println(green.getColor());
-        System.out.println(red.getColor());
+        System.out.println("green.getColor(): " + green.getColor());
+        System.out.println("red.getColor(): " + red.getColor());
 
         System.out.println("\n/********************/\n");
 
