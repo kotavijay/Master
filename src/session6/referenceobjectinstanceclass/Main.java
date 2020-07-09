@@ -1,8 +1,12 @@
 package session6.referenceobjectinstanceclass;
 
 public class Main {
-    public static void main(String[] args) {
 
+    private void test() {
+        System.out.println("test");
+    }
+
+    public static void main(String[] args) {
 //        Creating instance of House
         House blue = new House("blue");
 
